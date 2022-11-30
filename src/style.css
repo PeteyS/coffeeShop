@@ -1,0 +1,48 @@
+html,body{
+    height: 100%;
+    min-width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+
+#content{
+    background-color: aqua;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+    flex: 1;
+    background-color: antiquewhite;
+}
+.top,.bottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+}
+.bottom{
+    background-color: greenyellow;
+}
+.nav{
+    width: 350px;
+    background-color: brown;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.button{
+    height: 40px;
+    width: 100px;
+    background-color:aliceblue;
+}
+.button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.contentSpace{
+    flex: 4;
+    background-color: lightcoral;
+}
