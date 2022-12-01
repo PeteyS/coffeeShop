@@ -4,31 +4,38 @@ html,body{
     margin: 0;
     padding: 0;
 }
-
+@font-face{
+    font-family: 'Anybody';
+    src: url('./Anybody-VariableFont_wdth\,wght.ttf');
+}
+*{
+    font-family: 'Anybody';
+    color: rgb(255, 0, 162);
+}
 #content{
-    background-color: aqua;
+    background-color: white;
+    /*background-image: url('./background.jpg');*/
     height: 100%;
     display: flex;
     flex-direction: column;
 }
-
 .header{
-    flex: 1;
-    background-color: antiquewhite;
+    background-color: white;
+    min-height: 140px;
 }
 .top,.bottom{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: aqua;
+    background-color: transparent;
 }
 .bottom{
-    background-color: greenyellow;
+    background-color: transparent;
 }
 .nav{
     width: 350px;
-    background-color: brown;
+    background-color: transparent;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -36,13 +43,77 @@ html,body{
 .button{
     height: 40px;
     width: 100px;
-    background-color:aliceblue;
+    background-color:transparent;
 }
 .button:hover{
     cursor: pointer;
-    transform: scale(1.1);
+    transform: scale(1.01);
+}
+.button:active{
+    transform: scale(0.99);
 }
 .contentSpace{
-    flex: 4;
-    background-color: lightcoral;
+    flex: 5;
+    background-color: transparent;
+}
+.container{
+    background-color: white;
+    /*background-image: url('./background.jpg');*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.statement{
+    background-color: white;
+    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+    height: 50px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul{
+    padding: 0;
+}
+.hours{
+    flex: 5;
+    display: flex;
+    flex-direction: column;
+    line-height: 50px;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+}
+.location{
+    margin: 20px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+}
+.recipeBox{
+    height: 400px;
+    margin: 10px;
+    width: 85%;
+    background-color:white;
+    display: flex;
+    color: black;
+    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+}
+.contactBlurb{
+    height: 200px;
+    width: 500px;
+    background-color: white;
+}
+.picture{
+    height: 400px;
+}
+p{
+    font-size: larger;
+    color: black;
 }

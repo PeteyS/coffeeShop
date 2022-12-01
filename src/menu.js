@@ -2,11 +2,11 @@ import './style.css';
 
 export default function mainPage(){
     let container = document.createElement('div');
-    container.classList('container');
+    container.classList.add('container');
 
     //creating divs for page-specific content
     let statement = document.createElement('div');
-    statement.classList.add('.statement');
+    statement.classList.add('statement');
     let hours = document.createElement('div');
     hours.classList.add('hours');
     let hoursTitle = document.createElement('h2');
@@ -15,9 +15,10 @@ export default function mainPage(){
     location.classList.add('location');
 
     //whats in the statement div
-    let p = document.createElement('p');
-    p.textContent = 'Welcome to our coffee shop! We serve a variety of rare and exotic'
+    //let p = document.createElement('p');
+    statement.textContent = 'Welcome to our coffee shop! We serve a variety of rare and exotic'
     + ' coffees. Come in and try some';
+    //statement.appendChild(p);
 
     //going to put shop hours in an unordered list
     let hoursList = document.createElement('ul');
@@ -32,11 +33,13 @@ export default function mainPage(){
         hoursList.appendChild(daysList[i]);
     }
 
+    hoursTitle.textContent = 'HOURS OF OPERATION'
+
     hours.appendChild(hoursTitle);
     hours.appendChild(hoursList);
 
     //whats in the location div
-    location.textContent = '0 Nowhereville, Nowhere City, NW'
+    location.textContent = '0 Nowhereville St, Nowhere City, NW'
 
     container.appendChild(statement);
     container.appendChild(hours);
